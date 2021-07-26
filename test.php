@@ -15,5 +15,5 @@ $phi = 3.14;
 $luas = $r * $r * $phi;
 $keliling = $phi * 2 * $r;
 echo "Luas lingkaran: $luas \n";
-echo "Keliling lingkaran : $keliling";
+echo "Keliling lingkaran : $keliling \n";
 ?>
