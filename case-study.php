@@ -8,39 +8,12 @@ $product = [
     ["name"=> "Susa", "qty" => 3, "price" => 1700000],
 ];
 /** buat code untuk menghitung total jumlah yg dibeli */
-$pembelian = [
-    [
-        'name' =>  "Lenava",
-        'qty'  => 4,
-        'price' => 1000000
-    ],
-    [
-        'name' =>  "Aser",
-        'qty'  => 2,
-        'price' => 1500000
-    ],
-    [
-        'name' =>  "Tayiba",
-        'qty'  => 6,
-        'price' => 2000000
-    ],
-    [
-        'name' =>  "Doll",
-        'qty'  => 1,
-        'price' => 1200000
-    ],
-    [
-        'name' =>  "Susa",
-        'qty'  => 3,
-        'price' => 1700000
-    ],
-];
-
-$jumlahBarang = array_sum(array_column($pembelian, 'qty'));
-$jumlahTotal = array_sum(array_column($pembelian, 'price'));
-
-echo "Total jumlah yang dibeli : $jumlahBarang \n";
-echo "Jumlah yang harus dibayar : $jumlahTotal";
+$total = 0;
+for ($i=0; $i < count($product); $i++) { 
+    $totalEachItem = $product[$i]["qty"] * $product[$i]["price"];
+    $total += $totalEachItem;
+    // $total = $total + $totalEachItem;
+}
 /** second case
  * buat fungsi untuk menghitung bilangan faktorial
  * faktorial(5) -> 5 * 4 * 3 * 2 * 1 = 120 */
