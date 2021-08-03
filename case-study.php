@@ -14,6 +14,10 @@ for ($i=0; $i < count($product); $i++) {
     $total += $totalEachItem;
     // $total = $total + $totalEachItem;
 }
+<<<<<<< HEAD
+=======
+// echo "Total of all item is $total"
+>>>>>>> 18223d387d9b28d3e58edaa91bd21ca95a0ff678
 /** second case
  * buat fungsi untuk menghitung bilangan faktorial
  * faktorial(5) -> 5 * 4 * 3 * 2 * 1 = 120 */
